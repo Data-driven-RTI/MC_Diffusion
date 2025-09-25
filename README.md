@@ -6,7 +6,7 @@ We introduce a data-driven root tuber sensing (RTS) framework that uses the rece
 
 For data collection, we design a testbed, Spin, which consists of an RF sensor network with 16 sensor nodes, two types of containers, a rotating platform, and an RGB camera. The large container contains soil with predefined locations to insert one or more small containers. Potato tubers with different dimensions are buried in different small containers with soil. By placing the “nesting containers” on a rotating platform and rotating the platform with various predefined angles, root tubers can be located at various positions and orientations within the sensing area. In addition, we use a stick with a colored marker, which is captured by the RGB camera to generate the ground truth.  
 <p align="center">
-  <img src="images/Testbed.png" alt="Testbed" width="60%"/>
+  <img src="images/Testbed.png" alt="Testbed" width="50%"/>
 </p>
 
 To evaluate the performance of our RTS framework, we construct a comprehensive dataset consisting of data from a static environment (Case 1), an environment with dynamic changes (Case 2), and multiple environments and soil moisture conditions (Case 3).
