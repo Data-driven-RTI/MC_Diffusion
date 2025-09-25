@@ -18,29 +18,29 @@ Some visualization reuslts of MC-Diffusion and baselin methods are shown below. 
 <table>
   <tr>
     <td align="center">
-      <img src="Testbed.png" width="200"><br>
+      <img src="images/Testbed.png" width="200"><br>
       <sub>Caption 1</sub>
     </td>
     <td align="center">
-      <img src="Testbed.png" width="200"><br>
+      <img src="images/Testbed.png" width="200"><br>
       <sub>Caption 2</sub>
     </td>
     <td align="center">
-      <img src="Testbed.png" width="200"><br>
+      <img src="images/Testbed.png" width="200"><br>
       <sub>Caption 3</sub>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="Testbed.png" width="200"><br>
+      <img src="images/Testbed.png" width="200"><br>
       <sub>Caption 4</sub>
     </td>
     <td align="center">
-      <img src="Testbed.png" width="200"><br>
+      <img src="images/Testbed.png" width="200"><br>
       <sub>Caption 5</sub>
     </td>
     <td align="center">
-      <img src="Testbed.png" width="200"><br>
+      <img src="images/Testbed.png" width="200"><br>
       <sub>Caption 6</sub>
     </td>
   </tr>
