@@ -15,35 +15,36 @@ To evaluate the performance of our RTS framework, we construct a comprehensive d
 </p>
 
 Some visualization reuslts of MC-Diffusion and baselin methods are shown below. For illustration, we present imaging results from a static environment, a fixed environment with dynamic changes, and across multiple environments. 
-<div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; text-align: center;">
-
-  <div style="flex: 0 0 200px;">
+<table>
+<tr>
+  <td align="center">
     <img src="image1.png" width="200"><br>
-    <sub>Caption 1</sub>
-  </div>
-  <div style="flex: 0 0 200px;">
+    Caption 1
+  </td>
+  <td align="center">
     <img src="image2.png" width="200"><br>
-    <sub>Caption 2</sub>
-  </div>
-  <div style="flex: 0 0 200px;">
+    Caption 2
+  </td>
+  <td align="center">
     <img src="image3.png" width="200"><br>
-    <sub>Caption 3</sub>
-  </div>
-
-  <div style="flex: 0 0 200px;">
+    Caption 3
+  </td>
+</tr>
+<tr>
+  <td align="center">
     <img src="image4.png" width="200"><br>
-    <sub>Caption 4</sub>
-  </div>
-  <div style="flex: 0 0 200px;">
+    Caption 4
+  </td>
+  <td align="center">
     <img src="image5.png" width="200"><br>
-    <sub>Caption 5</sub>
-  </div>
-  <div style="flex: 0 0 200px;">
+    Caption 5
+  </td>
+  <td align="center">
     <img src="image6.png" width="200"><br>
-    <sub>Caption 6</sub>
-  </div>
-
-</div>
+    Caption 6
+  </td>
+</tr>
+</table>
 
 
 
