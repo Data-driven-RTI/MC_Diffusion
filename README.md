@@ -15,36 +15,37 @@ To evaluate the performance of our RTS framework, we construct a comprehensive d
 </p>
 
 Some visualization reuslts of MC-Diffusion and baselin methods are shown below. For illustration, we present imaging results from a static environment, a fixed environment with dynamic changes, and across multiple environments. 
-<table>
+<table style="border-collapse: collapse; border: none; background-color: transparent;">
   <tr>
-    <td align="center">
-      <img src="images/Testbed.png" width="300"><br>
+    <td align="center" style="border: none; background-color: transparent;">
+      <img src="images/Testbed.png" width="200"><br>
       <sub>Caption 1</sub>
     </td>
-    <td align="center">
-      <img src="images/Testbed.png" width="300"><br>
+    <td align="center" style="border: none; background-color: transparent;">
+      <img src="images/Testbed.png" width="200"><br>
       <sub>Caption 2</sub>
     </td>
-    <td align="center">
-      <img src="images/Testbed.png" width="300"><br>
+    <td align="center" style="border: none; background-color: transparent;">
+      <img src="images/Testbed.png" width="200"><br>
       <sub>Caption 3</sub>
     </td>
   </tr>
   <tr>
-    <td align="center">
-      <img src="images/Testbed.png" width="300"><br>
+    <td align="center" style="border: none; background-color: transparent;">
+      <img src="images/Testbed.png" width="200"><br>
       <sub>Caption 4</sub>
     </td>
-    <td align="center">
-      <img src="images/Testbed.png" width="300"><br>
+    <td align="center" style="border: none; background-color: transparent;">
+      <img src="images/Testbed.png" width="200"><br>
       <sub>Caption 5</sub>
     </td>
-    <td align="center">
-      <img src="images/Testbed.png" width="300"><br>
+    <td align="center" style="border: none; background-color: transparent;">
+      <img src="images/Testbed.png" width="200"><br>
       <sub>Caption 6</sub>
     </td>
   </tr>
 </table>
+
 
 
 
