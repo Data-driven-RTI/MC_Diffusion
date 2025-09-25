@@ -15,36 +15,19 @@ To evaluate the performance of our RTS framework, we construct a comprehensive d
 </p>
 
 Some visualization reuslts of MC-Diffusion and baselin methods are shown below. For illustration, we present imaging results from a static environment, a fixed environment with dynamic changes, and across multiple environments. 
-<table>
-<tr>
-  <td align="center">
-    <img src="image1.png" width="200"><br>
-    Caption 1
-  </td>
-  <td align="center">
-    <img src="image2.png" width="200"><br>
-    Caption 2
-  </td>
-  <td align="center">
-    <img src="image3.png" width="200"><br>
-    Caption 3
-  </td>
-</tr>
-<tr>
-  <td align="center">
-    <img src="image4.png" width="200"><br>
-    Caption 4
-  </td>
-  <td align="center">
-    <img src="image5.png" width="200"><br>
-    Caption 5
-  </td>
-  <td align="center">
-    <img src="image6.png" width="200"><br>
-    Caption 6
-  </td>
-</tr>
-</table>
+<img src="image1.png" width="200" style="display:inline-block; margin-right:10px;">
+<img src="image2.png" width="200" style="display:inline-block; margin-right:10px;">
+<img src="image3.png" width="200" style="display:inline-block;">
+<br>
+Caption 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Caption 2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Caption 3
+<br><br>
+
+<img src="image4.png" width="200" style="display:inline-block; margin-right:10px;">
+<img src="image5.png" width="200" style="display:inline-block; margin-right:10px;">
+<img src="image6.png" width="200" style="display:inline-block;">
+<br>
+Caption 4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Caption 5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Caption 6
+
 
 
 
