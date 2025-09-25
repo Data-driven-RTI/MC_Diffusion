@@ -15,12 +15,8 @@ To evaluate the performance of our RTS framework, we construct a comprehensive d
 </p>
 
 Some visualization reuslts of MC-Diffusion and baselin methods are shown below. For illustration, we present imaging results from a static environment, a fixed environment with dynamic changes, and across multiple environments. 
-
-
-
-
-
-
-
+<p align="center">
+  <img src="images/Visulaization.png" alt="Dataset" width="90%"/>
+</p>
 
 The raw dataset has been publicly released. Both the dataset and code for data pre-processing are accessible at [https://ieee-dataport.org/documents/underground-root-tuber-sensing-wireless-networks](https://ieee-dataport.org/documents/underground-root-tuber-sensing-wireless-networks). In addition, we have released the pre-trained model and part of the corresponding data files in releases, which can be used for performance testing. 
