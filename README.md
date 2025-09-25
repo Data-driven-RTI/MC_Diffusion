@@ -20,3 +20,8 @@ Some visualization reuslts of MC-Diffusion and baselin methods are shown below. 
 </p>
 
 The raw dataset has been publicly released. Both the dataset and code for data pre-processing are accessible at [https://ieee-dataport.org/documents/underground-root-tuber-sensing-wireless-networks](https://ieee-dataport.org/documents/underground-root-tuber-sensing-wireless-networks). In addition, we have released the pre-trained model and part of the corresponding data files in releases, which can be used for performance testing. 
+
+
+# Prerequisite and Evaluation
+
+## 1.1 Prerequisite
