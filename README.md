@@ -10,3 +10,6 @@ For data collection, we design a testbed, Spin, which consists of an RF sensor n
 </p>
 
 To evaluate the performance of our RTS framework, we construct a comprehensive dataset, WPS, consisting of data from a static environment (Case 1), an environment with dynamic changes (Case 2), and multiple environments and soil moisture conditions (Case 3).
+<p align="center">
+  <img src="images/Dataset" alt="Dataset" width="80%"/>
+</p>
