@@ -8,3 +8,5 @@ For data collection, we design a testbed, Spin, which consists of an RF sensor n
 <p align="center">
   <img src="images/Testbed.png" alt="Testbed" width="60%"/>
 </p>
+
+To evaluate the performance of our RTS framework, we construct a comprehensive dataset consisting of data from a static environment (Case 1), an environment with dynamic changes (Case 2), and multiple environments and soil moisture conditions (Case 3).
