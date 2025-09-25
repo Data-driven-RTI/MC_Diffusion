@@ -3,3 +3,5 @@ We introduce a data-driven root tuber sensing (RTS) framework that uses the rece
 <p align="center">
   <img src="images/Overview.png" alt="Overview" width="50%"/>
 </p>
+
+For data collection, we design a testbed, Spin, which consists of an RF sensor network with 16 sensor nodes, two types of containers, a rotating platform, and an RGB camera. 
