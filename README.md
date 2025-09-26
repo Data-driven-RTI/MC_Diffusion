@@ -91,3 +91,26 @@ unzip Case3_Environment.zip -d [Case3_Environment of MC_Diffusion root directory
 
 unzip Case3_Moisture.zip -d [Case3_Environment of MC_Diffusion root directory]
 ```
+
+### 4. Running
+After configuring the development environment and loading the required datasets and models, the programs corresponding to different Cases can be executed directly.
+* Run Case 1
+```
+cd Case1/SecondStageCodes/
+python Main.py
+```
+* Run Case 2
+```
+cd Case2/SecondStageCodes/
+python Main.py
+```
+* Run Case3_Environment
+```
+cd Case3_Environment/SecondStageCodes/
+python Main.py
+```
+* Run Case3_Moisture
+```
+cd Case3_Moisture/SecondStageCodes/
+python Main.py
+```
