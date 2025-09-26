@@ -116,4 +116,10 @@ python Main.py
 ```
 
 ## Evaluation
+### 1. Evaluation for a static environment
+We use four different metrics to quantitatively evaluate the performance of MC-Diffusion in a static environment, as well as that of baseline methods.
+<p align="center">
+  <img src="images/Case1.png" alt="Case1" width="50%"/>
+</p>
+We first evaluate the performance of MC-Diffusion in a static environment (Case 1), where RSS data are collected at 840 positions for 10 root tubers. As reported in Table III, our model outperforms all baseline models. These results demonstrate the efficacy of our model design in achieving high-quality and accurate imaging in a static environment. 
 
