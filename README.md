@@ -33,6 +33,7 @@ In the absence of Docker, the development environment can be configured using An
 * Create a conda environment called MC-Diffusion based on Python 3.10, and activate the environment.
 ```
 conda create -n MC_Diffusion python=3.10
+
 conda activate MC_Diffusion
 ```
 * Install PyTorch, as well as other required packages,
@@ -56,6 +57,8 @@ If a Docker environment is already available, the development environment can be
 * Pull the Docker image and create the development container.
 ```
 docker pull pytorch/pytorch:2.1.0-cuda12.1-cudnn8-devel
+
 mkdir MC_Diffusion
-docker 
+
+docker run -tid --name=MC_Diffusion --gpus=all -ipc=host -v MC_Diffusion:/workspace/MC_Diffusion pytorch/pytorch:2.1.0-cuda12.1-cudnn8-devel
 ```
