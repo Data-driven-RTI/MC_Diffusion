@@ -38,9 +38,24 @@ conda activate MC_Diffusion
 * Install PyTorch, as well as other required packages,
 ```
 pip install torch==2.1.0+cu121 torchvision==0.16.0+cu121 torchaudio==2.1.0+cu121 --index-url https://download.pytorch.org/whl/cu121
+
 pip install matplotlib
+
 pip install scikit-image
+
 pip install vit-pytorch
+
 pip install einops
+
 pip install pytorch-ignite
+```
+
+### 2. Docker management
+If a Docker environment is already available, the development environment can be configured as follows. 
+
+* Pull the Docker image and create the development container.
+```
+docker pull pytorch/pytorch:2.1.0-cuda12.1-cudnn8-devel
+mkdir MC_Diffusion
+docker 
 ```
