@@ -54,7 +54,7 @@ pip install pytorch-ignite
 ### 2. Docker management
 If a Docker environment is already available, the development environment can be configured as follows. 
 
-* Pull the Docker image and create the development container.
+* Pull the Docker image and create the development container. Note that a folder named "MC_Diffusion" is created in the current directory to store the development environment, and its location can be adjusted as need. 
 ```
 docker pull pytorch/pytorch:2.1.0-cuda12.1-cudnn8-devel
 
