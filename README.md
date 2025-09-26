@@ -54,7 +54,7 @@ pip install pytorch-ignite
 ### 2. Docker management
 If a Docker environment is already available, the development environment can be configured as follows. 
 
-* Pull the Docker image and create the development container. Note that a folder named "MC_Diffusion" is created in the current directory to store the development environment, and its location can be adjusted as need. 
+* Pull the Docker image and create the development container. Note that a folder named "MC_Diffusion" is created in the current directory to store the development environment, and its location can be adjusted as needed. 
 ```
 docker pull pytorch/pytorch:2.1.0-cuda12.1-cudnn8-devel
 
@@ -63,7 +63,7 @@ mkdir MC_Diffusion
 docker run -tid --name=MC_Diffusion --gpus=all -ipc=host -v MC_Diffusion:/workspace/MC_Diffusion pytorch/pytorch:2.1.0-cuda12.1-cudnn8-devel
 ```
 
-* Start the container and install the required packets.
+* Start the container and install the required packages.
 ```
 docker exec -it MC_Diffusion bash
 
@@ -79,4 +79,15 @@ pip install pytorch-ignite
 ```
 
 ### 3. Download project
-Download or git clone the MC_Diffusion project. Download and data and pre-trained models in releases to the project directory. Note that, to evaluate the efficacy of MC-Diffusion under different sensing cases, we divide the experiments into three cases: imaging in a static environment (Case 1), imaging in an environment with dynamic changes (Case 2), and imaging across different environments and soil moisture conditions (Case 3). Case 3 is further divided into two parts: cross-environment imaging (Case3_Environment) and imaging under varying soil moisture conditions (Case3_Moisture). When extracting the files, the corresponding data and models should be placed into their respective directories. 
+Download or git clone the MC_Diffusion project. Download the data and pre-trained models in releases to the project directory. Note that, to evaluate the efficacy of MC-Diffusion under different sensing cases, we divide the experiments into three cases: imaging in a static environment (Case 1), imaging in an environment with dynamic changes (Case 2), and imaging across different environments and soil moisture conditions (Case 3). Case 3 is further divided into two parts: cross-environment imaging (Case3_Environment) and imaging under varying soil moisture conditions (Case3_Moisture). When extracting the files, the corresponding data and models should be placed into their respective directories. 
+
+* Extract files to their respective directories.
+```
+unzip Case1.zip -d [Case1 of MC_Diffusion root directory]
+
+unzip Case2.zip -d [Case2 of MC_Diffusion root directory]
+
+unzip Case3_Environment.zip -d [Case3_Environment of MC_Diffusion root directory]
+
+unzip Case3_Moisture.zip -d [Case3_Environment of MC_Diffusion root directory]
+```
