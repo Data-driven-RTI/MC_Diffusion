@@ -123,3 +123,12 @@ We use four different metrics to quantitatively evaluate the performance of MC-D
 </p>
 We first evaluate the performance of MC-Diffusion in a static environment (Case 1), where RSS data are collected at 840 positions for 10 root tubers. As reported in Table III, our model outperforms all baseline models. These results demonstrate the efficacy of our model design in achieving high-quality and accurate imaging in a static environment. 
 
+### 2. Evaluation for a dynamic environment
+To verify the robustness of our MC-Diffusion model, we randomly modify the environmental layout during data collection, thereby generating variations in the RSS data and creating different environmental conditions $E_1$ and $E_2$. 
+<p align="center">
+  <img src="images/Case2.png" alt="Case1" width="50%"/>
+</p>
+We use data from one condition to build the pretrained model, which is then fine-tuned and evaluated in the other condition. During testing, we select two groups: group 1 contains 5 tubers with an average size larger than that of group 2, which also consists of 5 tubers. Table V compares the RPD and IoU values of our model under dynamic changes (Case 2) with those of the baseline models. The average RPD and IoU values of MC-Diffusion surpass those of the baseline models, demonstrating its efficacy in robust imaging within a dynamic environment.
+
+
+
