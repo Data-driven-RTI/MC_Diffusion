@@ -62,3 +62,18 @@ mkdir MC_Diffusion
 
 docker run -tid --name=MC_Diffusion --gpus=all -ipc=host -v MC_Diffusion:/workspace/MC_Diffusion pytorch/pytorch:2.1.0-cuda12.1-cudnn8-devel
 ```
+
+* Start the container and install the required packets.
+```
+docker exec -it MC_Diffusion bash
+
+pip install matplotlib
+
+pip install scikit-image
+
+pip install vit-pytorch
+
+pip install einops
+
+pip install pytorch-ignite
+```
