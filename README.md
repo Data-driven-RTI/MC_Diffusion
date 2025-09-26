@@ -130,5 +130,12 @@ To verify the robustness of our MC-Diffusion model, we randomly modify the envir
 </p>
 We use data from one condition to build the pretrained model, which is then fine-tuned and evaluated in the other condition. During testing, we select two groups: group 1 contains 5 tubers with an average size larger than that of group 2, which also consists of 5 tubers. Table V compares the RPD and IoU values of our model under dynamic changes (Case 2) with those of the baseline models. The average RPD and IoU values of MC-Diffusion surpass those of the baseline models, demonstrating its efficacy in robust imaging within a dynamic environment.
 
+### 3. Evaluation for imaging across environments
+To verify the ability of the MCDiffusion model for cross-environment imaging, we collect RSS data from three different environments: a hallway, a meeting room, and a living room. We denote these environments as $E_h$, $E_m$, and $E_l$, respectively.
+<p align="center">
+  <img src="images/Case3_Env.png" alt="Case1" width="50%"/>
+</p>
+We quantitatively evaluate our model using the RPD and IoU metrics for cross-environment imaging. As shown in Table VI, our model achieves average RPD and IoU values of 0.19 and 0.83, respectively, outperforming all baseline models. The performance of baseline models degrades when applied to new environments, as variations in multipath interference lead to significant changes in RSS data. This not only reduces imaging accuracy but also results in unstable performance. To address this issue, our model incorporates a DRL component that extracts environment-invariant features, so as to mitigate overfitting to specific environments and enable more robust and accurate imaging.
+
 
 
