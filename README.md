@@ -25,3 +25,4 @@ The raw dataset has been publicly released. Both the dataset and code for data p
 # Prerequisite and Evaluation
 
 ## 1.1 Prerequisite
+MC_Diffusion is implemented with Python 3.10 and Pytorch 2.1.0. Our development environment can be managed using either Docker or Anaconda. In the following, we provide separate descriptions for each. 
