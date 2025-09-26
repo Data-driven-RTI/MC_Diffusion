@@ -60,7 +60,7 @@ docker pull pytorch/pytorch:2.1.0-cuda12.1-cudnn8-devel
 
 mkdir MC_Diffusion
 
-docker run -tid --name=MC_Diffusion --gpus=all -ipc=host -v MC_Diffusion:/workspace/MC_Diffusion pytorch/pytorch:2.1.0-cuda12.1-cudnn8-devel
+docker run -tid --name=MC_Diffusion --gpus=all --ipc=host --network=host -v ./MC_Diffusion/:/workspace/MC_Diffusion pytorch/pytorch:2.1.0-cuda12.1-cudnn8-devel
 ```
 
 * Start the container and install the required packages.
