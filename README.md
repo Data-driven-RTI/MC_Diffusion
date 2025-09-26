@@ -116,26 +116,32 @@ python Main.py
 ```
 
 ## Evaluation
-### 1. Evaluation for a static environment
+### 1. Evaluation for a static environment (Case 1)
 We use four different metrics to quantitatively evaluate the performance of MC-Diffusion in a static environment, as well as that of baseline methods.
 <p align="center">
   <img src="images/Case1.png" alt="Case1" width="50%"/>
 </p>
 We first evaluate the performance of MC-Diffusion in a static environment (Case 1), where RSS data are collected at 840 positions for 10 root tubers. As reported in Table III, our model outperforms all baseline models. These results demonstrate the efficacy of our model design in achieving high-quality and accurate imaging in a static environment. 
 
-### 2. Evaluation for a dynamic environment
+### 2. Evaluation for a dynamic environment (Case 2)
 To verify the robustness of our MC-Diffusion model, we randomly modify the environmental layout during data collection, thereby generating variations in the RSS data and creating different environmental conditions $E_1$ and $E_2$. 
 <p align="center">
-  <img src="images/Case2.png" alt="Case1" width="50%"/>
+  <img src="images/Case2.png" alt="Case2" width="50%"/>
 </p>
 We use data from one condition to build the pretrained model, which is then fine-tuned and evaluated in the other condition. During testing, we select two groups: group 1 contains 5 tubers with an average size larger than that of group 2, which also consists of 5 tubers. Table V compares the RPD and IoU values of our model under dynamic changes (Case 2) with those of the baseline models. The average RPD and IoU values of MC-Diffusion surpass those of the baseline models, demonstrating its efficacy in robust imaging within a dynamic environment.
 
-### 3. Evaluation for imaging across environments
+### 3. Evaluation for imaging across environments (Case 3)
 To verify the ability of the MCDiffusion model for cross-environment imaging, we collect RSS data from three different environments: a hallway, a meeting room, and a living room. We denote these environments as $E_h$, $E_m$, and $E_l$, respectively.
 <p align="center">
-  <img src="images/Case3_Env.png" alt="Case1" width="50%"/>
+  <img src="images/Case3_Env.png" alt="Case3_Env" width="50%"/>
 </p>
 We quantitatively evaluate our model using the RPD and IoU metrics for cross-environment imaging. As shown in Table VI, our model achieves average RPD and IoU values of 0.19 and 0.83, respectively, outperforming all baseline models. The performance of baseline models degrades when applied to new environments, as variations in multipath interference lead to significant changes in RSS data. This not only reduces imaging accuracy but also results in unstable performance. To address this issue, our model incorporates a DRL component that extracts environment-invariant features, so as to mitigate overfitting to specific environments and enable more robust and accurate imaging.
 
+### 4. Evaluation for imaging across soil moisture levels (Case 3)
+We evaluate MC-Diffusion using RSS data collected under different soil conditions. We perform experiments in a hallway under two soil moisture levels: 7.1% and 11.2%. Each soil condition is treated as an environment. We also collect data in a meeting room with soil at a moisture level of 7.1% to train and evaluate MC-Diffusion. We denote $E_{h_1}$ and $E_{h_2}$ as two soil conditions with moisture levels of 7.1% and 11.2%, respectively, and Em represents the meeting room.
+<p align="center">
+  <img src="images/Case3_Moisture.png" alt="Case3_Moisture" width="50%"/>
+</p>
+Table VII presents the RPD and IoU values of MC-Diffusion and baseline models for imaging under different soil moisture levels. MC-Diffusion achieves an average IoU value of 0.79 under two soil moisture levels (Eh1 and Eh2 ), outperforming all baseline models. The performance of baseline models degrades under new soil conditions, as varying moisture levels lead to different levels of RF signal attenuation, resulting in significant changes in RSS data. To address this problem, MC-Diffusion treats each soil condition as a distinct environment and uses the DRL component to extract soil-independent features from RSS data, enabling robust and accurate imaging across different soil conditions.
 
 
