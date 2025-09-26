@@ -14,12 +14,12 @@ To evaluate the performance of our RTS framework, we construct a comprehensive d
   <img src="images/Dataset.png" alt="Dataset" width="90%"/>
 </p>
 
-Some visualization reuslts of MC-Diffusion and baselin methods are shown below. For illustration, we present imaging results from a static environment, a fixed environment with dynamic changes, and across multiple environments. 
+Some visualization results of MC-Diffusion and baseline methods are shown below. For illustration, we present imaging results from a static environment, a fixed environment with dynamic changes, and across multiple environments. 
 <p align="center">
   <img src="images/Visualization.png" alt="Visualization" width="90%"/>
 </p>
 
-The raw dataset has been publicly released. Both the dataset and code for data pre-processing are accessible at [https://ieee-dataport.org/documents/underground-root-tuber-sensing-wireless-networks](https://ieee-dataport.org/documents/underground-root-tuber-sensing-wireless-networks). In addition, we have released the pre-trained model and part of the corresponding data files in releases, which can be used for performance testing. 
+The raw dataset has been publicly released. Both the dataset and code for data pre-processing are accessible at [https://ieee-dataport.org/documents/underground-root-tuber-sensing-wireless-networks](https://ieee-dataport.org/documents/underground-root-tuber-sensing-wireless-networks). In addition, we have released the pre-trained model and the corresponding data files in releases, which can be used for performance testing. 
 
 
 # Prerequisite and Evaluation
@@ -28,7 +28,7 @@ The raw dataset has been publicly released. Both the dataset and code for data p
 MC_Diffusion is implemented with Python 3.10 and PyTorch 2.1.0. Our development environment can be managed using either Docker or Anaconda. In the following, we provide separate descriptions for each. 
 
 ### 1. Anaconda management
-In the absence of Docker, the development environment can be configured using Anaconda by following the procedure outline below.
+In the absence of Docker, the development environment can be configured using Anaconda by following the procedure outlined below.
 
 * Create a conda environment called MC-Diffusion based on Python 3.10, and activate the environment.
 ```
@@ -114,3 +114,6 @@ python Main.py
 cd Case3_Moisture/SecondStageCodes/
 python Main.py
 ```
+
+## Evaluation
+
