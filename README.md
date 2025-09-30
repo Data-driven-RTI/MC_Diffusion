@@ -28,7 +28,7 @@ The raw dataset has been publicly released. Both the dataset and code for data p
 MC_Diffusion is implemented with Python 3.10 and PyTorch 2.1.0. Our development environment can be managed using either Docker or Anaconda. In the following, we provide separate descriptions for each. 
 
 ### 1. Anaconda management
-In the absence of Docker, the development environment can be configured using Anaconda by following the procedure outlined below.
+In the absence of Docker, the development environment can be configured using Anaconda (Version 23.9.0) by following the procedure outlined below.
 
 * Create a conda environment called MC-Diffusion based on Python 3.10, and activate the environment.
 ```
@@ -36,10 +36,16 @@ conda create -n MC_Diffusion python=3.10
 
 conda activate MC_Diffusion
 ```
-* Install PyTorch, as well as other required packages,
+* Install PyTorch, if CUDA is available
 ```
 pip install torch==2.1.0+cu121 torchvision==0.16.0+cu121 torchaudio==2.1.0+cu121 --index-url https://download.pytorch.org/whl/cu121
-
+```
+* Install PyTorch, if CUDA is not available
+```
+pip install torch==2.1.0+cpu torchvision==0.16.0+cpu torchaudio==2.1.0+cpu --index-url https://download.pytorch.org/whl/cpu
+```
+* Install other required packages,
+```
 pip install matplotlib
 
 pip install scikit-image
