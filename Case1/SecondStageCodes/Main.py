@@ -20,15 +20,15 @@ sys.path.append("../FirstStageCodes")
 from save import saveValid
 from changeFile import changeFile
 
-device = "cuda:1"
-lr = 1e-4
-epochs = 6
-
+if torch.cuda.is_available():
+    device = "cuda:0"
+else:
+    device = "cpu"
 
 def visualize(testfile,sencondPretrainfile):
     if not os.path.exists("../Visualizations"):
         os.mkdir("../Visualizations")
-    SecondStage_pretrain = torch.load(sencondPretrainfile)
+    SecondStage_pretrain = torch.load(sencondPretrainfile,map_location=device,weights_only=False)
     testDataset = RTIDataset(testfile)
     testloader = DataLoader(dataset=testDataset,batch_size=2,shuffle=False,num_workers=4,pin_memory=True)
     with torch.no_grad():
@@ -85,7 +85,7 @@ def IoU_RPD_EDE(testfile,pretrainfile):
                 for dd in difference_list:
                     fs.write(str(str_count))
                     fs.write("\t")
-                    fs.write(str(dd))
+                    fs.write(str(EDECalculate(dd)))
                     fs.write("\n")
                     str_count += 1
                     print(str_count)

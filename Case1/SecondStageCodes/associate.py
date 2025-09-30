@@ -9,7 +9,6 @@ def processData(data):
     data_ind = data_ind[::-1]
     data[data_ind[4000:]] = 0.0
     data = data.reshape(360,360)
-
     edges = canny(data)
     labels = measure.label(edges, connectivity=2)
     props = measure.regionprops(labels)

@@ -6,8 +6,6 @@ import numpy as np
 from ignite.metrics import SSIM, PSNR
 from ignite.engine import *
 
-
-
 def image_var_torch(image, mean):
         _, m, n = image.shape 
         batch_var = torch.sqrt(torch.sum(torch.sum((image-mean)**2,dim=-1),dim=-1)/(m*n-1))

@@ -14,17 +14,18 @@ import os
 import random
 torch.manual_seed(3447)
 
-
-epochs = 100
-lr = 5e-4
 ImglossFunction = nn.MSELoss()
 
-device = "cuda:1"
+if torch.cuda.is_available():
+    device = "cuda:0"
+else:
+    device = "cpu"
+
 
 def saveValid(vaildfile,pretrainmodelfile,savedir):
     validDataset = RTIDataSet(vaildfile)
     validloader = DataLoader(validDataset,batch_size=128,num_workers=4,pin_memory=True,shuffle=False)
-    pretrainmodel = torch.load(pretrainmodelfile,weights_only=False)
+    pretrainmodel = torch.load(pretrainmodelfile,weights_only=False,map_location=device)
     count = 0
     with torch.no_grad():
         pretrainmodel.eval()

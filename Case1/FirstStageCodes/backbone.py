@@ -66,9 +66,6 @@ class Encoder(nn.Module):
         )
         
     def forward(self,data):
-        '''
-        @param data:  BatchSzie, 16, 16, 15 
-        '''
         local_feature_map = self.local_conv(data)
         middle_feature_map = self.mid_conv(data)
         global_feature_map = self.global_conv(data)
