@@ -123,3 +123,10 @@ python Main.py
 
 ## Evaluation
 
+### 1 Evaluation for Case 1
+We first evaluate the performance of MC-Diffusion in a static environment (Case 1), where RSS data are collected at 840 positions for 10 root tubers. All tuber-position pairs are split into a 9:1 ratio for training and evaluation.
+<p align="center">
+  <img src="images/Case1.png" alt="Case1" width="50%"/>
+</p>
+Table III shows that our model achieves SSIM and IoU values of 0.99 and 0.88, respectively, outperforming the considered baseline models. It also achieves an average RPD value of 0.08, higher than those of the baselines. These results demonstrate the efficacy of our model in producing high-quality and accurate images.
+
