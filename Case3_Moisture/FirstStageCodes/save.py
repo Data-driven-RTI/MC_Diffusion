@@ -14,7 +14,10 @@ torch.manual_seed(3447)
 import random
 import os
 
-device = "cuda:1"
+if torch.cuda.is_available():
+    device = "cuda:0"
+else:
+    device = "cpu"
 
 def saveValid(validfile,pretrainmodelfile,savedir):
     validDataset = PairTest(validfile)

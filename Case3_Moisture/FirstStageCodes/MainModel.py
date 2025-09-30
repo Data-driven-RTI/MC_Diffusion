@@ -40,7 +40,7 @@ class MainModel(nn.Module):
             cls_e = torch.cat([cls_x_e,cls_y_e],dim=0)
             Img_x = self.Imaging(X_c)
             Img_y = self.Imaging(Y_c)
-            return X_c,Y_c,Img_x,Img_y,cls_c,cls_e# ,X_p,Y_p #
+            return X_c,Y_c,Img_x,Img_y,cls_c,cls_e
         else:
             FX = self.Encoder(X)
             X_c,X_e = self.Separator(FX)

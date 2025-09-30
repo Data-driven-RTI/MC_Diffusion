@@ -12,7 +12,6 @@ def dataprocess15(matrix):
     new_matrix = matrix[~diag_mask].view(N, M, -1)
     return new_matrix
 
-
 class PairTrain(Dataset):
     def __init__(self,fileName) -> None:
         super().__init__()

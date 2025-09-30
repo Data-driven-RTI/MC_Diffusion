@@ -20,9 +20,10 @@ import random
 import os
 
 
-device = 'cuda:1'
-lr = 1e-4
-epochs = 3
+if torch.cuda.is_available():
+    device = "cuda:0"
+else:
+    device = "cpu"
 
 def visualize(testfile,sencondPretrainfile):
     if not os.path.exists("../Visualizations"):
