@@ -36,15 +36,15 @@ conda create -n MC_Diffusion python=3.10
 
 conda activate MC_Diffusion
 ```
-* Install PyTorch, if CUDA is available
+* Install PyTorch, if CUDA is available.
 ```
 pip install torch==2.1.0+cu121 torchvision==0.16.0+cu121 torchaudio==2.1.0+cu121 --index-url https://download.pytorch.org/whl/cu121
 ```
-* Install PyTorch, if CUDA is not available
+* Install PyTorch, if CUDA is not available.
 ```
 pip install torch==2.1.0+cpu torchvision==0.16.0+cpu torchaudio==2.1.0+cpu --index-url https://download.pytorch.org/whl/cpu
 ```
-* Install other required packages,
+* Install other required packages.
 ```
 pip install matplotlib
 
