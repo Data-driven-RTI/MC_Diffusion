@@ -1,10 +1,5 @@
 #encoding=utf-8
 
-'''
-This file is used to record the reconstructed images from the 
-first stage and its corresponding ground truth.
-'''
-
 import os
 def changeFile(fileName,filedir):
     with open(fileName,"r",encoding="utf-8") as f:

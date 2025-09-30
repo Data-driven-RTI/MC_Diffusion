@@ -1,14 +1,14 @@
 #encoding=utf-8
 
-'''
-计算成像指标
-'''
 import torch
 import numpy as np
 from ignite.metrics import SSIM, PSNR
 from ignite.engine import *
 
-device = "cuda:2"
+if torch.cuda.is_available():
+        device = "cuda:0"
+else:
+        device = "cpu"
 
 def eval_step(engine, batch):
     return batch

@@ -20,8 +20,10 @@ import random
 import os
 
 
-device = "cuda:3"
-
+if torch.cuda.is_available():
+    device = "cuda:0"
+else:
+    device = "cpu"
 
 def visualize(testfile,sencondPretrainfile):
     if not os.path.exists("../Visualizations"):
@@ -137,16 +139,16 @@ if __name__ == "__main__":
     changeFile("../datafiles_finetune/Test21_Large.txt","../Test21Large/")
     changeFile("../datafiles_finetune/Test21_Small.txt","../Test21Small/")
 
-    ImageEvaluate("../datafiles_finetune/Test12_Large_FirstStage.txt","../RecordsSecond/Second2_2_12.pth","12Large")
+    ImageEvaluate("../datafiles_finetune/Test12_Large_FirstStage.txt","../RecordsSecond/Second2_2_12.pth","E1E2_Group1")
     IoU_RPD("../datafiles_finetune/Test12_Large_FirstStage.txt","../RecordsSecond/Second2_2_12.pth")
 
-    ImageEvaluate("../datafiles_finetune/Test12_Small_FirstStage.txt","../RecordsSecond/Second2_2_12.pth","12Small")
+    ImageEvaluate("../datafiles_finetune/Test12_Small_FirstStage.txt","../RecordsSecond/Second2_2_12.pth","E1E2_Group2")
     IoU_RPD("../datafiles_finetune/Test12_Small_FirstStage.txt","../RecordsSecond/Second2_2_12.pth")
 
-    ImageEvaluate("../datafiles_finetune/Test21_Large_FirstStage.txt","../RecordsSecond/Second2_2_21.pth","21Large")
+    ImageEvaluate("../datafiles_finetune/Test21_Large_FirstStage.txt","../RecordsSecond/Second2_2_21.pth","E2E1_Group1")
     IoU_RPD("../datafiles_finetune/Test21_Large_FirstStage.txt","../RecordsSecond/Second2_2_21.pth")
 
-    ImageEvaluate("../datafiles_finetune/Test21_Small_FirstStage.txt","../RecordsSecond/Second2_2_21.pth","21Small")
+    ImageEvaluate("../datafiles_finetune/Test21_Small_FirstStage.txt","../RecordsSecond/Second2_2_21.pth","E2E1_Group2")
     IoU_RPD("../datafiles_finetune/Test21_Small_FirstStage.txt","../RecordsSecond/Second2_2_21.pth")
 
     

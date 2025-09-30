@@ -5,9 +5,6 @@ from torch.utils.data import Dataset,DataLoader
 import numpy as np
 
 def dataprocess15(matrix):
-    '''
-    Remove diagonal elements (node1-node1,node2-node2,....)
-    '''
     N, M, M = matrix.shape
     diag_mask = torch.eye(M, dtype=torch.bool).unsqueeze(0).expand(N, -1, -1)
     new_matrix = matrix[~diag_mask].view(N, M, -1)

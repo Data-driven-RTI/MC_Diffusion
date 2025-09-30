@@ -18,10 +18,11 @@ import random
 import os
 
 
-epochs = 100
-lr = 5e-4
 ImglossFunction = nn.MSELoss()
-device = "cuda:3"
+if torch.cuda.is_available():
+    device = "cuda:0"
+else:
+    device = "cpu"
 
 def saveValid(vaildfile,pretrainmodelfile,savedir):
     validDataset = RTIDataSet(vaildfile)
@@ -44,7 +45,7 @@ def finetune(trainfile,testfile,pretrainfile,strr):
     testset = RTIDataSet(testfile)
     trainloader = DataLoader(trainset,batch_size=128,pin_memory=True,num_workers=4)
     testloader = DataLoader(testset,batch_size=128,pin_memory=True,num_workers=4)
-    model = torch.load(pretrainfile,map_location=device)
+    model = torch.load(pretrainfile,map_location=device,weights_only=False)
     optimzier = optim.Adam(model.parameters(),lr=5e-4,weight_decay=1e-9)
     bestUQI  = -100000
     for epoch in range(200):
