@@ -18,8 +18,10 @@ from save import saveValid
 from ChangeFile import changeFile
 import os
 
-
-device = 'cuda:1'
+if torch.cuda.is_available():
+    device = "cuda:0"
+else:
+    device = "cpu"
 
 
 def visualize(testfile,sencondPretrainfile):

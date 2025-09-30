@@ -11,8 +11,11 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
+if torch.cuda.is_available():
+    device = "cuda:0"
+else:
+    device = "cpu"
 
-device = "cuda:1"
 
 def saveValid(validfile,pretrainmodelfile,savedir):
     validDataset = PairTest(validfile)
